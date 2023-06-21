@@ -1,0 +1,19 @@
+aside{
+    background-color: #3D464D;
+    flex: 1;
+    color: var(--white-color);
+}
+.title{
+    padding: 24px 0 24px 20px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    p{
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: var(--white-color);
+    }
+}
+.icon{
+    color: var(--white-color);
+}

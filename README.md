@@ -1,6 +1,10 @@
-- Lession 1:
-    - Hoàn thành: 10/11 bài
-    - Chưa hoàn thành: bài 11
-- Lession 2:
-    - Hoàn thành UI
-    - Chia component
+-   Lession 1:
+    -   Hoàn thành: 10/11 bài
+    -   Chưa hoàn thành: bài 11
+-   Lession 2:
+    -   Hoàn thành UI
+    -   Chia component
+-   Lession 3:
+    -   Hoàn thành UI : Home_Page (Header, SideBar, Discount, ProductCard, Footer)
+    -   Chia component : Header, Footer, Icon, ...
+    -   Cấn hình Router : Home, ProductDetails

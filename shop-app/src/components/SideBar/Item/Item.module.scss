@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px 11px 20px;
+    border-radius: 5px;
+    h2{
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: var(--white-color);
+    }
+    &:hover {
+        background-color: #B59628;
+        cursor: pointer;
+    }
+}

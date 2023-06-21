@@ -1,0 +1,56 @@
+.wrapper {
+    background: #fffcfc;
+    border: 1px solid #b4b1b1;
+    border-radius: 5px;
+    padding: 20px 25px 10px 20px;
+    width: 290px;
+    cursor: pointer;
+    img {
+        border-radius: 5px;
+        width: 250px;
+        height: 200px;
+    }
+}
+.body {
+    margin-top: 15px;
+    font-weight: 700;
+    h2 {
+        font-size: 3.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 36px;
+    }
+    h3 {
+        font-size: 1.6rem;
+        line-height: 27px;
+    }
+}
+.feedback {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    .discount {
+        font-size: 1.6rem;
+        color: #d70000;
+        line-height: 1.8rem;
+    }
+    .price {
+        font-size: 2.4rem;
+    }
+    .icon-card{
+        cursor: pointer;
+    }
+}
+button {
+    margin-top: 3px;
+    background: rgba(0, 167, 17, 0.5);
+    border: 1px solid rgba(0, 202, 20, 0.5);
+    box-shadow: 5px 5px 20px rgba(196, 255, 202, 0.5);
+    border-radius: 10px;
+    color: var(--white-color);
+    padding: 4px 21px;
+    font-size: 1.4rem;
+}
