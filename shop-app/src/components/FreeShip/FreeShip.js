@@ -1,6 +1,7 @@
 import classnames from 'classnames/bind';
 import styles from './FreeShip.module.scss';
 import { FreeShipIcon } from '../Icon/Icon';
+
 const cx = classnames.bind(styles);
 
 function FreeShip() {

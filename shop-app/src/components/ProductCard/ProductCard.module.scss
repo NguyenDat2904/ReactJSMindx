@@ -44,12 +44,8 @@
         cursor: pointer;
     }
 }
-button {
+.btn-card {
     margin-top: 3px;
-    background: rgba(0, 167, 17, 0.5);
-    border: 1px solid rgba(0, 202, 20, 0.5);
-    box-shadow: 5px 5px 20px rgba(196, 255, 202, 0.5);
-    border-radius: 10px;
     color: var(--white-color);
     padding: 4px 21px;
     font-size: 1.4rem;

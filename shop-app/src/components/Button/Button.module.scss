@@ -1,0 +1,19 @@
+.wrapper {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.primary {
+    background-color: var(--primary-color);
+    color: var(--black-color);
+}
+.green {
+    background: rgba(0, 167, 17, 0.5);
+    border: 1px solid rgba(0, 202, 20, 0.5);
+    box-shadow: 5px 5px 20px rgba(196, 255, 202, 0.5);
+    border-radius: 10px;
+}
+.gray {
+    background: #c4c4c4;
+    padding: 7px 20px;
+}

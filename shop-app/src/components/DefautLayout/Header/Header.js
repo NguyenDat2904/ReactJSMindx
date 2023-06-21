@@ -4,7 +4,8 @@ import styles from './Header.module.scss';
 import { CartIcon, UserIcon, SearchIcon, MenuIcon } from '../../Icon/Icon';
 
 const cx = classnames.bind(styles);
-function Header() {
+function Header({ onClick }) {
+    
     return (
         <header className={cx('header')}>
             <div className={cx('top')}>
@@ -26,8 +27,10 @@ function Header() {
                     <SearchIcon className={cx('right')} />
                 </div>
                 <div className={cx('action')}>
-                    <CartIcon />
-                    <UserIcon />
+                    <CartIcon className={cx('icon')} />
+                    <div onClick={onClick}>
+                        <UserIcon className={cx('icon')} />
+                    </div>
                 </div>
             </div>
         </header>

@@ -2,6 +2,7 @@ import classnames from 'classnames/bind';
 import styles from './ProductCard.module.scss';
 import { CardIcon, StarIcon } from '../Icon/Icon';
 import { Link } from 'react-router-dom';
+import Button from '../Button/Button';
 
 const cx = classnames.bind(styles);
 
@@ -22,12 +23,10 @@ function ProductCard({ img, title, id, price, discount, star }) {
                 </div>
                 <div className={cx('feedback')}>
                     <p className={cx('price')}>$ {price}</p>
-                    <Link to="/product">
-                        <CardIcon className={cx('card-icon')} />
-                    </Link>
+                    <CardIcon className={cx('card-icon')} />
                 </div>
 
-                <button>Available</button>
+                <Button className={cx("btn-card")} green>Available</Button>
             </div>
         </div>
     );
