@@ -6,5 +6,6 @@
     -   Chia component
 -   Lession 3:
     -   Hoàn thành UI : Home_Page (Header, SideBar, Discount, ProductCard, Footer)
-    -   Chia component : Header, Footer, Icon, ...
+    -   Chia component : Header, Footer, Icon, Button, PopUp (Login, Register, ForgotPass),...
     -   Cấn hình Router : Home, ProductDetails
+    -   Xử lý sự kiện : Render PopUp
