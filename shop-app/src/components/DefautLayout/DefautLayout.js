@@ -18,7 +18,7 @@ function DefaultLayout({ children }) {
         setShowRegister(!showRegister);
     };
     const handleForgot = () => {
-        setShowForgot(!showForgot);
+        setShowForgot(false);
     };
     const buttonClickHandlers = {
         0: handlePopup,
