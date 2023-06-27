@@ -9,3 +9,5 @@
     -   Chia component : Header, Footer, Icon, Button, PopUp (Login, Register, ForgotPass),...
     -   Cấn hình Router : Home, ProductDetails
     -   Xử lý sự kiện : Render PopUp
+-   Lession 4 : Hoàn thành UI : Home_Page (...Home_Page, SlideShow)
+-   Lession 5 : Xử lý logic : ButtonCart ( Thêm sản phẩm mới vào giỏ hàng, Đã tồn tại sản phẩm tăng Quality lên 1, Tính toán Subtotal, Total)
