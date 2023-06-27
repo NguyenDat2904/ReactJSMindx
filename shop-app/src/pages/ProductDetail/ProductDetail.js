@@ -1,10 +1,15 @@
 import classnames from 'classnames/bind';
 import styles from './ProductDetail.module.scss';
+import NavBar from '../../components/NavBar/NavBar';
 
 const cx = classnames.bind(styles);
 
 function ProductDetail() {
-    return <h1>Gio hang</h1>;
+    return (
+        <div className={cx("wrapper")}>
+            <NavBar tabPage />
+        </div>
+    );
 }
 
 export default ProductDetail;

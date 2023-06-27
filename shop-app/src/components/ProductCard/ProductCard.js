@@ -1,12 +1,15 @@
 import classnames from 'classnames/bind';
 import styles from './ProductCard.module.scss';
 import { CardIcon, StarIcon } from '../Icon/Icon';
-import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 
 const cx = classnames.bind(styles);
 
-function ProductCard({ img, title, id, price, discount, star }) {
+function ProductCard({ img, title, id, price, discount, star, idCode, addCount }) {
+    const handleCount = (event) => {
+        addCount(img, title, price, idCode);
+        event.preventDefault();
+    };
     return (
         <div className={cx('wrapper')}>
             <img src={img} alt="" />
@@ -23,10 +26,14 @@ function ProductCard({ img, title, id, price, discount, star }) {
                 </div>
                 <div className={cx('feedback')}>
                     <p className={cx('price')}>$ {price}</p>
-                    <CardIcon className={cx('card-icon')} />
+                    <div onClick={handleCount}>
+                        <CardIcon className={cx('card-icon')} />
+                    </div>
                 </div>
 
-                <Button className={cx("btn-card")} green>Available</Button>
+                <Button className={cx('btn-card')} green>
+                    Available
+                </Button>
             </div>
         </div>
     );
