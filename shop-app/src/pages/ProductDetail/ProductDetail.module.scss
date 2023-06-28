@@ -1,5 +1,10 @@
 .wrapper{
     padding-left: var(--padding--page);
     padding-right: var(--padding--page);
+}
 
+.product{
+    margin-top: 12px;
+    display: flex;
+    gap: 34px;
 }

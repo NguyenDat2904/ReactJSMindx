@@ -1,7 +1,6 @@
 import classnames from 'classnames/bind';
 import { useState } from 'react';
 import styles from './Home.module.scss';
-import { v4 as uuidv4 } from 'uuid';
 import SideBar from '../../components/SideBar/SideBar';
 import FreeShip from '../../components/FreeShip/FreeShip';
 import NavBar from '../../components/NavBar/NavBar';
