@@ -10,7 +10,8 @@ import { useLocation } from 'react-router-dom';
 
 const cx = classnames.bind(styles);
 
-function ProductDetail({ productShoes, addCount }) {
+function ProductDetail({ productShoes, addCount, details }) {
+    const { img, title, price, star } = details;
     const { pathname } = useLocation();
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -19,8 +20,8 @@ function ProductDetail({ productShoes, addCount }) {
         <div id="top" className={cx('wrapper')}>
             <NavBar tabPage />
             <div className={cx('product')}>
-                <ImgProduct />
-                <TxtProduct />
+                <ImgProduct img={img} />
+                <TxtProduct title={title} price={price} star={star} />
             </div>
             <NavBar seeAll />
             <Review />

@@ -13,3 +13,6 @@
 -   Lession 5 :
     -   Xử lý logic : ButtonCart ( Thêm sản phẩm mới vào giỏ hàng, Đã tồn tại sản phẩm tăng Quality lên 1, Tính toán Subtotal, Total)
     -   Hoàn thành UI : ProductDetails (Details, Review, Product, Pagination )
+    -   Xử lý logic :
+        -   Sự kiện click sản phẩm Render ProductDetails (img, title, price, star)
+        -   Re-render price theo quality

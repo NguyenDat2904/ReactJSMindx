@@ -135,6 +135,10 @@ function DefaultLayout({ children }) {
     const addCount = (img, title, price, idCode) => {
         onHandlerCount(img, title, price, idCode);
     };
+    const [details, setdetails] = useState([]);
+    const handleShoes = (txt) => {
+        setdetails(txt);
+    };
     return (
         <div className={cx('wrapper')}>
             <Header onClick={handlePopup} count={count} cart={cart} />
@@ -143,11 +147,13 @@ function DefaultLayout({ children }) {
                     return React.cloneElement(child, {
                         addCount: addCount,
                         productShoes: newProduct,
+                        handleShoes: handleShoes,
                     });
                 } else if (child.type === ProductDetail) {
                     return React.cloneElement(child, {
                         addCount: addCount,
                         productShoes: newProduct,
+                        details: details,
                     });
                 }
                 return child;

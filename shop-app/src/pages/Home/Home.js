@@ -9,7 +9,8 @@ import ProductList from '../../components/ProductList/ProductList';
 
 const cx = classnames.bind(styles);
 
-function Home({ addCount, productShoes }) {
+function Home({ addCount, productShoes, handleShoes }) {
+   ;
     return (
         <main>
             <section className={cx('flex-container', 'first')}>
@@ -23,7 +24,7 @@ function Home({ addCount, productShoes }) {
                 <FreeShip />
             </section>
             <NavBar seeAll />
-            <ProductList addCount={addCount} productShoes={productShoes} />
+            <ProductList addCount={addCount} productShoes={productShoes} onClick={handleShoes} />
         </main>
     );
 }

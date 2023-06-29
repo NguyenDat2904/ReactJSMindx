@@ -4,11 +4,11 @@ import shoes8 from '../../../assets/img/product4/7.png';
 
 const cx = classnames.bind(styles);
 
-function ImgProduct() {
+function ImgProduct({ img=shoes8 }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('show')}>
-                <img src={shoes8} alt="" />
+                <img src={img} alt="" />
             </div>
             <div className={cx('show-all')}>
                 <div className={cx('show', 'show-item')}>

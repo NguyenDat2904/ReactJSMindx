@@ -2,21 +2,30 @@ import classnames from 'classnames/bind';
 import styles from './TxtProduct.module.scss';
 import Button from '../../../components/Button/Button';
 import { StarIcon } from '../../../components/Icon/Icon';
+import { useState } from 'react';
 
 const cx = classnames.bind(styles);
 
-function TxtProduct() {
+function TxtProduct({ title = 'Air Jordan Zion Noah', price = '110', star = [null, null] }) {
+    const [count, setCount] = useState(1);
+    const handleCount = (action) => {
+        if (action === 'increase') {
+            setCount(count + 1);
+        } else if (action === 'decrease') {
+            if (count <= 1) {
+                setCount(1);
+            } else {
+                setCount(count - 1);
+            }
+        }
+    };
+    const total = price * count;
+    const listStar = star.map(() => <StarIcon />);
     return (
         <div className={cx('wrapper')}>
-            <h2 className={cx('title')}>SHOES ADIDAS ULTRABOOST 21</h2>
+            <h2 className={cx('title')}>{title}</h2>
             <div className={cx('flex-container', 'review')}>
-                <div>
-                    <StarIcon />
-                    <StarIcon />
-                    <StarIcon />
-                    <StarIcon />
-                    <StarIcon />
-                </div>
+                <div>{listStar}</div>
                 <div className={cx('line')}>l</div>
                 <p className={cx('review-txt')}>150 Review</p>
                 <div className={cx('line')}>l</div>
@@ -38,7 +47,7 @@ function TxtProduct() {
                 </div>
                 <div className={cx('flex-container', 'price')}>
                     <p className={cx('sold-price')}>
-                        <strong>$120</strong>
+                        <strong>$ {total}</strong>
                     </p>
                     <p className={cx('discount')}>50% Off</p>
                 </div>
@@ -52,11 +61,17 @@ function TxtProduct() {
                 <p className={cx('select')}>Quality:</p>
                 <div className={cx('flex-container', 'quality')}>
                     <div className={cx('number')}>
-                        <div>-</div>
-                        <div>2</div>
-                        <div>+</div>
+                        <button onClick={() => handleCount('decrease')} className={cx('calculator')}>
+                            -
+                        </button>
+                        <div className={cx('count')}>{count}</div>
+                        <button onClick={() => handleCount('increase')} className={cx('calculator')}>
+                            +
+                        </button>
                     </div>
-                    <Button className={cx("add-cart")} primary>Add to cart</Button>
+                    <Button className={cx('add-cart')} primary>
+                        Add to cart
+                    </Button>
                 </div>
             </div>
         </div>
