@@ -2,18 +2,13 @@ main {
     padding-left: var(--padding--page);
     padding-right: var(--padding--page);
 }
-.flex-container{
+.flex-container {
     display: flex;
     gap: 10px;
-    
 }
 .first {
-    margin-top: 11px;  
+    margin-top: 11px;
 }
 .two {
     margin-top: 8px;
-    
-}
-.three{
-    flex-wrap: wrap;
 }

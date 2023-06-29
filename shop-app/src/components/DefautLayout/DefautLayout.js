@@ -16,6 +16,7 @@ import shoes8 from '../../assets/img/product4/8.png';
 import styles from './DefaultLayout.module.scss';
 import Popup from '../Popup/Popup';
 import { useState } from 'react';
+import ProductDetail from '../../pages/ProductDetail/ProductDetail';
 const cx = classnames.bind(styles);
 
 function DefaultLayout({ children }) {
@@ -139,6 +140,11 @@ function DefaultLayout({ children }) {
             <Header onClick={handlePopup} count={count} cart={cart} />
             {React.Children.map(children, (child) => {
                 if (child.type === Home) {
+                    return React.cloneElement(child, {
+                        addCount: addCount,
+                        productShoes: newProduct,
+                    });
+                } else if (child.type === ProductDetail) {
                     return React.cloneElement(child, {
                         addCount: addCount,
                         productShoes: newProduct,

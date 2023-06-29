@@ -5,6 +5,7 @@ import Tippy from '@tippyjs/react/headless';
 import { CartIcon, UserIcon, SearchIcon, MenuIcon } from '../../Icon/Icon';
 import Button from '../../Button/Button';
 import ModalTippy from '../../ModalTippy/ModalTippy';
+import { Link } from 'react-router-dom';
 
 const cx = classnames.bind(styles);
 function Header({ onClick, count, cart }) {
@@ -41,7 +42,9 @@ function Header({ onClick, count, cart }) {
                 </ul>
             </div>
             <div className={cx('bottom')}>
-                <h2 className={cx('logo')}>Shop App</h2>
+                <Link to="/">
+                    <h2 className={cx('logo')}>Shop App</h2>
+                </Link>
                 <div className={cx('search')}>
                     <div className={cx('left')}>
                         <MenuIcon stroke="#2E2D2D" />
